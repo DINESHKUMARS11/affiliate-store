@@ -1,0 +1,76 @@
+/* Sky blue background for the entire page */
+body {
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for all product cards */
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual product card with 3D hover effect */
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image styling */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Product title */
+.product h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Product description */
+.product p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Stylish 3D button */
+.product a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 25px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px #c77700;
+    transition: all 0.2s ease;
+}
+
+.product a:hover {
+    background-color: #e68900;
+    box-shadow: 0 2px #c77700;
+    transform: translateY(2px);
+    text-decoration: none; /* Ensure no underline */
+}
